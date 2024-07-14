@@ -1,0 +1,20 @@
+2024/07/14-13:24:35.674 32d4 Reusing MANIFEST C:\Users\Gu_fe\Desktop\greenplay\tokens\session_general\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/14-13:24:35.674 32d4 Recovering log #352
+2024/07/14-13:24:35.700 32d4 Reusing old log C:\Users\Gu_fe\Desktop\greenplay\tokens\session_general\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000352.log 
+2024/07/14-13:24:37.766 32d4 Level-0 table #357: started
+2024/07/14-13:24:37.787 32d4 Level-0 table #357: 497526 bytes OK
+2024/07/14-13:24:37.788 32d4 Delete type=0 #352
+2024/07/14-13:24:37.789 32d4 Manual compaction at level-0 from '\x00\x7f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x80\x00\x00\x00' @ 0 : 0; will stop at '\x00\x7f\x00\x00\x05' @ 690054 : 1
+2024/07/14-13:24:37.789 32d4 Compacting 1@0 + 1@1 files
+2024/07/14-13:24:37.862 32d4 Generated table #358@0: 76461 keys, 1578586 bytes
+2024/07/14-13:24:37.863 32d4 Compacted 1@0 + 1@1 files => 1578586 bytes
+2024/07/14-13:24:37.864 32d4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/07/14-13:24:37.865 32d4 Delete type=2 #357
+2024/07/14-13:24:37.865 32d4 Manual compaction at level-0 from '\x00\x7f\x00\x00\x05' @ 690054 : 1 .. '\x00\x80\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/14-13:25:50.616 5014 Compacting 1@1 + 1@2 files
+2024/07/14-13:25:50.649 5014 Generated table #359@1: 32619 keys, 1218226 bytes
+2024/07/14-13:25:50.649 5014 Compacted 1@1 + 1@2 files => 1218226 bytes
+2024/07/14-13:25:50.650 5014 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/07/14-13:25:50.650 5014 Delete type=2 #319
+2024/07/14-13:25:50.650 5014 Delete type=2 #354
+2024/07/14-13:25:50.650 5014 Delete type=2 #358
