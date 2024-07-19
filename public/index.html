@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar WhatsApp</title>
+</head>
+<body>
+    <h1>Conectar WhatsApp</h1>
+    <button id="startButton">Iniciar Conexão</button>
+    <div id="qrcode">
+        <p>QR Code aparecerá aqui.</p>
+    </div>
+    <script>
+        document.getElementById('startButton').addEventListener('click', async () => {
+            try {
+                const startResponse = await fetch('/start');
+                console.log(await startResponse.text());
+
+                const fetchQrCode = async () => {
+                    try {
+                        const response = await fetch('/qrcode');
+                        const qrCodeHtml = await response.text();
+                        document.getElementById('qrcode').innerHTML = qrCodeHtml;
+                    } catch (error) {
+                        console.error('Erro ao buscar QR Code:', error);
+                        document.getElementById('qrcode').innerHTML = '<p>Erro ao carregar QR Code. Tente novamente mais tarde.</p>';
+                    }
+                };
+
+                fetchQrCode();
+                setInterval(fetchQrCode, 5000); // Tenta buscar o QR Code a cada 5 segundos
+            } catch (error) {
+                console.error('Erro ao iniciar conexão:', error);
+            }
+        });
+    </script>
+</body>
+</html>
