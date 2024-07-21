@@ -14,12 +14,14 @@
     <script>
         document.getElementById('startButton').addEventListener('click', async () => {
             try {
-                const startResponse = await fetch('/start');
+                // Use o IP público do seu backend hospedado no AWS Lightsail
+                const startResponse = await fetch('http://54.89.42.65:3000/start');
                 console.log(await startResponse.text());
 
                 const fetchQrCode = async () => {
                     try {
-                        const response = await fetch('/qrcode');
+                        // Use o IP público do seu backend hospedado no AWS Lightsail
+                        const response = await fetch('http://54.89.42.65:3000/qrcode');
                         const qrCodeHtml = await response.text();
                         document.getElementById('qrcode').innerHTML = qrCodeHtml;
                     } catch (error) {
